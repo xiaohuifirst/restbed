@@ -26,9 +26,9 @@ set( CMAKE_CXX_STANDARD 14 )
 set( INCLUDE_DIR "${PROJECT_SOURCE_DIR}/source" )
 set( SOURCE_DIR  "${PROJECT_SOURCE_DIR}/source/corvusoft/${PROJECT_NAME}" )
 
-if ( NOT DEFINED CMAKE_INSTALL_LIBDIR )
-    set( CMAKE_INSTALL_LIBDIR "library")
-endif ( )
+#if ( NOT DEFINED CMAKE_INSTALL_LIBDIR )
+#    set( CMAKE_INSTALL_LIBDIR "library")
+#endif ( )
 
 if ( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
     set( CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/distribution" CACHE PATH "Install path prefix" FORCE )
