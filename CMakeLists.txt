@@ -55,6 +55,7 @@ set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake" )
 find_package( asio REQUIRED )
 
 if ( BUILD_SSL )
+    add_definitions(-DBUILD_SSL)
     find_package( openssl REQUIRED )
 endif ( )
 
